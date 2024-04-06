@@ -1,0 +1,126 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    margin-left: 1%;
+    cursor: crosshair;
+}
+
+@font-face {
+    font-family: Nimbus;
+    src: url(../fonts/NimbusSanL-Bol.otf);
+  }
+
+body{
+    background-color: cornflowerblue;
+    font-family: Nimbus;
+    color: aliceblue;
+}
+
+#GD {
+    font-size: 7vw;
+}
+
+#research {
+    font-size: 2vw;
+}
+
+#titles {
+    line-height: 410%;
+}
+
+#Fall {
+    font-size: 1vw;
+    position: absolute;
+    right: 3%;
+    top: 2%;
+}
+
+.event {
+    font-size: 1vw;
+    width: 25%;
+    vertical-align: text-top;
+    bottom: 0;
+}
+
+.one {
+    display: inline-block;
+    padding-top: 15%;
+ 
+}
+
+.two {
+    display: inline-block;
+    padding-top: 3%;
+    
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    margin-bottom: 7%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+/*
+.box {
+    position:relative;
+    z-index:0;
+    color:#fff;
+  }
+  .box:before {
+    content:"";
+    position:absolute;
+    z-index:999;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0; 
+    background:
+    radial-gradient(farthest-side ,#fff 95%,transparent 100%)
+      calc(var(--x) - .75em) calc(var(--y) - .75em)/1.5em 1.5em  fixed no-repeat;
+    mix-blend-mode:difference;
+  }
+  
+  
+
+  .black{
+    width:33vw;
+    height:100vh;
+    margin-left:33vw;
+    position:absolute;
+    background:url(https://picsum.photos/800/600?image=1069) center/cover;
+  }
+*/
+
+body:before {
+    content:"";
+    position:absolute;
+    z-index:999;
+    top:var(--y);
+    left:var(--x);
+    right:0;
+    bottom:0; 
+    width:7em;
+    height:7em;
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+    background:#fff;
+    mix-blend-mode:difference;
+  }
